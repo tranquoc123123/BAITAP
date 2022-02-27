@@ -13,8 +13,6 @@ column = document.getElementById('column');
    }
 }
 
-listSNT
-
 function listSNT(){    
     let sttNum;
     let endNum;
