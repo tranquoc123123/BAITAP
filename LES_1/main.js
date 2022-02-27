@@ -1,16 +1,16 @@
 
 function createTable(){
-row = document.getElementById('row');
-column = document.getElementById('column');
- for(let r=0;r<parseInt(row.value);r++)
-  {
-   let x=document.getElementById('thetable').insertRow(r);
-   for(let c=0;c<parseInt(column.value);c++)  
-    {
-     let y=  x.insertCell(c);
-     y.innerHTML="Default value"; 
-    }
-   }
+    row = document.getElementById('row');
+    column = document.getElementById('column');
+     for(let r=0;r<parseInt(row.value);r++)
+      {
+       let x=document.getElementById('thetable').insertRow(r);
+       for(let c=0;c<parseInt(column.value);c++)  
+        {
+         let y=  x.insertCell(c);
+         y.innerHTML="Default value"; 
+        }
+       }
 }
 
 function listSNT(){    
@@ -40,7 +40,7 @@ function listSNT(){
     }
     let result = document.getElementById('Result');
     result.innerHTML = text;
-}
+    }
 function Check(num){   
     if (num < 2) {return false;}
     else {
