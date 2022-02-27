@@ -1,7 +1,5 @@
 
-function createTable()
-{
-
+function createTable(){
 row = document.getElementById('row');
 column = document.getElementById('column');
  for(let r=0;r<parseInt(row.value);r++)
@@ -24,13 +22,11 @@ function listSNT(){
     let text ="";
     a = document.getElementById('a');
     b = document.getElementById('b');
-    if (a <= b) 
-    {
+    if (a <= b) {
         sttNum = a.value;
         endNum = b.value;
     }    
-    else
-    {
+    else{
         sttNum = b.value;
         endNum = a.value;
     }
@@ -39,25 +35,16 @@ function listSNT(){
        if (Check(i)) 
         {   
             rtn.push(i);
-            if (first)
-            {
-                text = i;
-            }
-            else
-            {
-                text = text + ", " +i;
-            } 
+            if (first) {text = i;}
+            else {text = text + ", " +i;} =            
             first = false;          
         }
     }
     let result = document.getElementById('Result');
     result.innerHTML = text;
 }
-function Check(num)
-{   
-    if (num < 2) {
-        return false;
-    }
+function Check(num){   
+    if (num < 2) {return false;}
     else {
         for (let i = 2; i <= Math.sqrt(num); i++) {
             if (num%i == 0) return false;
