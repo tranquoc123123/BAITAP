@@ -1,0 +1,21 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<meta charset=utf-8 /> 
+		<title>Create a table</title>  
+	</head>
+	<body>
+		<script src="./main.js"></script> 
+		<form>
+			<input type="number"  placeholder ="a" id="a" > 
+			<input type="number"  placeholder ="b" id="b">
+			<input type="button" onclick="listSNT()" value="Result"> 
+			<textarea id= 'Result'></textarea>
+			<br>
+			<input type="number"  placeholder ="Number of row" id="row" > 
+			<input type="number"  placeholder ="Number of colunm" id="column">    
+			<input type="button" onclick="createTable()" value="Create the table"> 
+		</form>
+		<table id="thetable" border="1"> </table>
+	</body>
+</html>
