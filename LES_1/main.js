@@ -40,14 +40,14 @@ function listSNT(){
         {   
             rtn.push(i);
             if (first)
-                {
-                    text = i;
-                }
+            {
+                text = i;
+            }
             else
-                {
-                    text = text + ", " +i;
-                } 
-                first = false;          
+            {
+                text = text + ", " +i;
+            } 
+            first = false;          
         }
     }
     let result = document.getElementById('Result');
