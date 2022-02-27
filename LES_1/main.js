@@ -2,15 +2,13 @@
 function createTable(){
     row = document.getElementById('row');
     column = document.getElementById('column');
-     for(let r=0;r<parseInt(row.value);r++)
-      {
-       let x=document.getElementById('thetable').insertRow(r);
-       for(let c=0;c<parseInt(column.value);c++)  
-        {
-         let y=  x.insertCell(c);
-         y.innerHTML="Default value"; 
+    for(let r=0;r<parseInt(row.value);r++){
+        let x=document.getElementById('thetable').insertRow(r);
+        for(let c=0;c<parseInt(column.value);c++){
+            let y=  x.insertCell(c);
+            y.innerHTML="Default value"; 
         }
-       }
+    }
 }
 
 function listSNT(){    
@@ -30,8 +28,7 @@ function listSNT(){
     }
     let first = true;
     for (let i = sttNum; i <= endNum ; i++) {
-       if (Check(i)) 
-        {   
+       if (Check(i)) {   
             rtn.push(i);
             if (first) {text = i;}
             else {text = text + ", " +i;} =            
