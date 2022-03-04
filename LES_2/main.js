@@ -83,8 +83,8 @@ class Clock {
     // }
 }
 
-const clk = document.querySelector("#ClockErea")
-const WG_NUMBER = 6;
+const clk = document.querySelector("#ClockArea")
+const WG_NUMBER = 5;
 let clkArr =[];
 let intervalArr =[];
 let countArr =[];
