@@ -7,8 +7,9 @@
         {
             "type": "pwa-chrome",
             "request": "launch",
-            "name": "Open INDEX.HTML",
-            "file": "c:\\Users\\quoc\\Documents\\GIT\\EX\\BAITAP\\LES_2\\INDEX.HTML"
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
         }
     ]
 }
