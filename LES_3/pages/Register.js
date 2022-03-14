@@ -63,10 +63,10 @@ class Register{
         const emailValue = this.inputEmail.getValue();
         const password = this.inputPassword.getValue();
 
-        rtn =  this.inputEmail.validateEmail();
-        rtn =  this.inputPassword.validatePassword();
-        rtn =  this.reinputPassword.validatePassword();
-        rtn =  this.inputName.valiteName();
+        rtn =   this.inputEmail.validateEmail()* 
+                this.inputPassword.validatePassword()*
+                this.reinputPassword.validatePassword()*
+                this.inputName.valiteName();
         if (rtn == status.fine) {
             if (this.reinputPassword.getValue() != this.inputPassword.getValue()){
                 this.reinputPassword.setErrorMessage("Confrim password not match")

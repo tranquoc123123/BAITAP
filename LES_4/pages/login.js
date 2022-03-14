@@ -73,8 +73,7 @@ class Login{
         const emailValue = this.inputEmail.getValue();
         const password = this.inputPassword.getValue();
     
-        rtn =  this.inputEmail.validateEmail();
-        rtn =  this.inputPassword.validatePassword();
+        rtn =  this.inputEmail.validateEmail() * this.inputPassword.validatePassword();
 
         if (rtn == status.fine)
         {
